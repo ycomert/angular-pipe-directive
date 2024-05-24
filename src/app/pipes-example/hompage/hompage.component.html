@@ -1,0 +1,70 @@
+<div class="container p-5">
+  <div class="row">
+    <div class="col-12 p-5 border border-primary">
+      <h3>Angular Built-In Pipes</h3>
+      <p>Angular'da birkaç yaygın kullanılan built-in pipe bulunmaktadır:</p>
+      <ul>
+        <li><strong>CurrencyPipe</strong>: Sayıları para birimi formatında gösterir.</li>
+        <li><strong>DatePipe</strong>: Tarihleri biçimlendirmek için kullanılır.</li>
+        <li><strong>DecimalPipe</strong>: Sayıları belirli bir desimal hassasiyet ve biçimle formatlamak için kullanılır.</li>
+        <li><strong>PercentPipe</strong>: Sayıları yüzde formatında gösterir.</li>
+        <li><strong>UpperCasePipe</strong>: Metni büyük harfe dönüştürür.</li>
+        <li><strong>LowerCasePipe</strong>: Metni küçük harfe dönüştürür.</li>
+        <li><strong>JsonPipe</strong>: Nesneleri JSON formatında stringe dönüştürür.</li>
+        <li><strong>SlicePipe</strong>: Bir diziyi veya stringi belirli bir başlangıç ve bitiş indeksine göre keser.</li>
+      </ul>
+      <h4>Örnek Kullanım:</h4>
+    </div>
+    <div class="col-4 p-5 border border-primary"><app-currency-pipe></app-currency-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-date-pipe></app-date-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-decimal-pipe></app-decimal-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-percent-pipe></app-percent-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-upper-case-pipe></app-upper-case-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-pipes-example></app-pipes-example></div>
+  </div>
+  <div class="row p-3 border border-danger">
+    <div class="col-3">
+      <h4>appButton</h4>
+      <button appButton>Tıklaaa</button>
+    </div>
+    <div class="col-6 text-center">
+      <h4>TranslatePipe</h4>
+      <app-translate-pipe></app-translate-pipe>
+    </div>
+    <div class="col-3">
+      <h4>appNoCharacterInput</h4>
+      <label class="py-2">No number caracter input:</label>
+      <input appNoCharacterInput>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 border border-primary">
+      <h4>appMultiple</h4>
+      <p *appMultiple="3">3 Kez Tekrar Edecek.</p>
+    </div>
+    <div class="col-4 border border-primary">
+      <h4>appMultiple</h4>
+      <p *appMultiple="5">5 Kez tekrar Edecek.</p>
+    </div>
+    <div class="col-4 border border-primary">
+      <h4>appWelcome directive</h4>
+      <p *appWelcome="4000">Uygulamaya Hoş Geldiniz!</p>
+    </div>
+    <div class="col-12 p-5 border border-primary">
+      <h3>Angular'da Yer Alan Built-in Directive'ler</h3>
+      <h4>Yaygın Kullanılan Built-in Directive'ler:</h4>
+      <ul>
+        <li><strong>NgClass</strong>: Elementlere dinamik olarak sınıf ekler veya çıkarır.</li>
+        <li><strong>NgStyle</strong>: Elementlere dinamik olarak stil uygular.</li>
+        <li><strong>NgIf</strong>: Bir koşula göre DOM'a eleman ekler veya çıkarır.</li>
+        <li><strong>NgFor</strong>: Bir koleksiyonun elemanları üzerinde yineleme yapar.</li>
+        <li><strong>NgSwitch</strong>: Çoklu koşullara göre DOM'a eleman ekler veya çıkarır.</li>
+      </ul>
+      <h4>Yapısal Directive'ler:</h4>
+      <ul>
+        <li><strong>NgIf</strong>: Koşula bağlı olarak elementin var olup olmadığını kontrol eder.</li>
+        <li><strong>NgFor</strong>: Bir dizi veya koleksiyonun elemanları üzerinde yineleme yapar.</li>
+        <li><strong>NgSwitch</strong>: Çoklu koşullara göre farklı şablonları gösterir.</li>
+      </ul>
+    </div>
+  </div>

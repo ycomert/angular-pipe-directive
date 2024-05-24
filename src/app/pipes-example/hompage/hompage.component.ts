@@ -13,9 +13,11 @@ import { AppNoCharacterInputDirective } from '../../directives/app-no-character-
 import { BrowserModule } from '@angular/platform-browser';
 import { MultipleDirective } from '../../directives/app-multiple-directive.directive';
 import { WelcomeDirective } from '../../directives/app-welcome.directive';
+import { FormControlErrorMessagePipe } from '../../pipes/form-control-error-message.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-pipes-example2',
+  selector: 'app-homepage',
   standalone: true,
 
   imports: [
@@ -30,11 +32,11 @@ import { WelcomeDirective } from '../../directives/app-welcome.directive';
     AppButtonDirective,
     AppNoCharacterInputDirective,
     WelcomeDirective,
-    CommonModule
+    CommonModule,ReactiveFormsModule
   ],
-  templateUrl: './pipes-example2.component.html',
-  styleUrl: './pipes-example2.component.scss'
+  templateUrl: './hompage.component.html',
+  styleUrl: './hompage.component.scss'
 })
-export class PipesExample2Component {
+export class HompageComponent {
 
 }
