@@ -11,6 +11,8 @@ import { TranslatePipeComponent } from '../translate-pipe/translate-pipe.compone
 import { AppButtonDirective } from '../../directives/app-button.directive';
 import { AppNoCharacterInputDirective } from '../../directives/app-no-character-input.directive';
 import { BrowserModule } from '@angular/platform-browser';
+import { MultipleDirective } from '../../directives/app-multiple-directive.directive';
+import { WelcomeDirective } from '../../directives/app-welcome.directive';
 
 @Component({
   selector: 'app-pipes-example2',
@@ -24,8 +26,10 @@ import { BrowserModule } from '@angular/platform-browser';
     PipesExampleComponent,
     UpperCasePipeComponent,
     TranslatePipeComponent,
+    MultipleDirective,
     AppButtonDirective,
     AppNoCharacterInputDirective,
+    WelcomeDirective,
     CommonModule
   ],
   templateUrl: './pipes-example2.component.html',

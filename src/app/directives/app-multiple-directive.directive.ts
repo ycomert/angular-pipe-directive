@@ -1,24 +1,19 @@
-// app-multiple.directive.ts
-
-import { Directive, Input, ViewContainerRef, TemplateRef, OnInit } from '@angular/core';
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Directive({
   selector: '[appMultiple]',
   standalone: true
 })
-export class AppMultipleDirective implements OnInit {
-  @Input() appMultiple: number=0;
-
+export class MultipleDirective {
   constructor(
-    private viewContainerRef: ViewContainerRef,
-    private templateRef: TemplateRef<any>
+    private templateRef: TemplateRef<any>,
+    private viewContainer: ViewContainerRef
   ) { }
 
-  ngOnInit() {
-    this.viewContainerRef.clear();
-    for (let i = 0; i < this.appMultiple; i++) {
-      this.viewContainerRef.createEmbeddedView(this.templateRef);
+  @Input() set appMultiple(count: number) {
+    this.viewContainer.clear();
+    for (let i = 0; i < count; i++) {
+      this.viewContainer.createEmbeddedView(this.templateRef);
     }
   }
 }
-
