@@ -1,0 +1,38 @@
+
+<div class="container p-5">
+  <div class="row">
+    <div class="col-4 p-5 border border-primary"><app-currency-pipe></app-currency-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-date-pipe></app-date-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-decimal-pipe></app-decimal-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-percent-pipe></app-percent-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-upper-case-pipe></app-upper-case-pipe></div>
+    <div class="col-4 p-5 border border-primary"><app-pipes-example></app-pipes-example></div>
+  </div>
+  <div class="row p-3 border border-danger" >
+    <div class="col-3">
+      <button appButton>Tıklaaa</button>
+    </div>
+    <div class="col-6 text-center">
+      <app-translate-pipe></app-translate-pipe>
+    </div>
+    <div class="col-3">
+      <label class="py-2">No number caracter input:</label>
+
+      <input appNoCharacterInput>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-6 border border-primary" >
+      <ng-container *appMultiple="3">
+        <p>This paragraph will be repeated 3 times.</p>
+      </ng-container>
+    </div>
+    <div class="col-6 border border-primary">
+      <p>This paragraph will be repeated 3 times.</p>
+    </div>
+  </div>
+
+</div>
+
+
